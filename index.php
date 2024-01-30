@@ -48,7 +48,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <ul class="list-unstyled my-2 d-flex">
+                <ul class="list-unstyled my-2 d-flex justify-content-center">
                     <?php foreach($films as $film) { ?>
                         <li class="py-2 mx-2">
                             <div class="card text-center">
