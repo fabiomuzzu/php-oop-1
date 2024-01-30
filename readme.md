@@ -9,6 +9,12 @@ Ciao ragazzi,
     => all'interno della classe è definito almeno un metodo
     - vengono istanziati almeno due oggetti ‘Movie’ e stampati a schermo i valori delle relative proprietà
 
+Svolgimento:
+- All'interno di php creo una classe Movie,
+- All'interno della classe Movie dichiaro le variabili d'istanza: $title, $genre, $year, $rate
+- All'interno di Movie creo una funzione construct con ($director, $production), passare i parametri nell'istanza di classe
+- Stampo a schermo tramite echo i valori delle propietà
+
 Bonus 1:
 Modificare la classe Movie in modo che accetti piú di un genere.
 
