@@ -12,6 +12,8 @@ Ciao ragazzi,
 Svolgimento:
 - All'interno di php creo una classe Movie,
 - All'interno della classe Movie dichiaro le variabili d'istanza: $title, $genre, $year, $rate
+- Creo una istanza della classe movie
+- Assegno dei valori agli attributi dell'istanza videogioco
 - All'interno di Movie creo una funzione construct con ($director, $production), passare i parametri nell'istanza di classe
 - Stampo a schermo tramite echo i valori delle propietà
 
