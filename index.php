@@ -45,22 +45,36 @@
     <title>Object Of Class</title>
 </head>
 <body>
-    <ul>
-        <?php foreach($films as $film) { ?>
-            <li class="py-2">
-                <div><?php echo "Nome: ".$film->title ?></div>
-                <div>
-                    <span>Genere:</span>
-                    <?php foreach($film->genre as $genre) { ?>
-                        <?php echo $genre."," ?>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <ul class="list-unstyled my-2 d-flex">
+                    <?php foreach($films as $film) { ?>
+                        <li class="py-2 mx-2">
+                            <div class="card text-center">
+                                <div class="card-header">
+                                    Film
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title"><?php echo "Nome: ".$film->title ?></h5>
+                                    <p class="card-text"><span>Genere:</span>
+                                        <?php foreach($film->genre as $genre) { ?>
+                                            <?php echo $genre."," ?>
+                                        <?php } ?>
+                                     </p>
+                                    <p class="card-text"><?php echo "Punteggio: ".$film->score."%" ?></p>
+                                    <p class="card-text"><?php echo "Regista: ".$film->director ?></p>
+                                    <p class="card-text"><?php echo "Prudottore: ".$film->production ?></p>
+                                </div>
+                                <div class="card-footer text-body-secondary">
+                                    <?php echo "Anno: ".$film->year ?>
+                                </div>
+                            </div>
+                        </li>
                     <?php } ?>
-                </div>
-                <div><?php echo "Anno: ".$film->year ?></div>
-                <div><?php echo "Punteggio: ".$film->score."%" ?></div>
-                <div><?php echo "Regista: ".$film->director ?></div>
-                <div><?php echo "Prudottore: ".$film->production ?></div>
-            </li>
-        <?php } ?>
-    </ul>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
