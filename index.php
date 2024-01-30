@@ -1,3 +1,13 @@
+<?php 
+    // Definizione classe Movie
+    class Movie{
+        public $title;
+        public $genre;
+        public $year;
+        public $rate;
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
