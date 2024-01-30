@@ -34,7 +34,6 @@
     $movie_2->setScore(70);
 
     $films = [$movie_1, $movie_2];
-    var_dump($films);
 ?>
 
 <!DOCTYPE html>
@@ -42,9 +41,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Object Of Class</title>
 </head>
 <body>
-    
+    <ul>
+        <?php foreach($films as $film) { ?>
+            <li class="py-2">
+                <div><?php echo "Nome: ".$film->title ?></div>
+                <div><?php echo "Genere: ".$film->genre ?></div>
+                <div><?php echo "Anno: ".$film->year ?></div>
+                <div><?php echo "Punteggio: ".$film->score."%" ?></div>
+                <div><?php echo "Regista: ".$film->director ?></div>
+                <div><?php echo "Prudottore: ".$film->production ?></div>
+            </li>
+        <?php } ?>
+    </ul>
 </body>
 </html>
