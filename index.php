@@ -28,9 +28,9 @@
     $movie_2 = new Movie("Harry Potter e la camera dei segreti", "2002", "Chris Columbus", "David Heyman");
 
     // Assegno dei valori agli attributi dell'istanza movie
-    $movie_1->genre = "Fantasy";
+    $movie_1->genre = ["Fantasy", "Avventura"];
     $movie_1->setScore(90);
-    $movie_2->genre = "Fantasy";
+    $movie_2->genre = ["Fantasy", "Avventura", "Fantastico"];
     $movie_2->setScore(70);
 
     $films = [$movie_1, $movie_2];
@@ -49,7 +49,12 @@
         <?php foreach($films as $film) { ?>
             <li class="py-2">
                 <div><?php echo "Nome: ".$film->title ?></div>
-                <div><?php echo "Genere: ".$film->genre ?></div>
+                <div>
+                    <span>Genere:</span>
+                    <?php foreach($film->genre as $genre) { ?>
+                        <?php echo $genre."," ?>
+                    <?php } ?>
+                </div>
                 <div><?php echo "Anno: ".$film->year ?></div>
                 <div><?php echo "Punteggio: ".$film->score."%" ?></div>
                 <div><?php echo "Regista: ".$film->director ?></div>
