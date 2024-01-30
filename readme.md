@@ -15,6 +15,7 @@ Svolgimento:
 - Creo una istanza della classe movie
 - Assegno dei valori agli attributi dell'istanza videogioco
 - All'interno di Movie creo una funzione construct con ($director, $production), passare i parametri nell'istanza di classe
+- Creo un metodo con public function.
 - Stampo a schermo tramite echo i valori delle propietà
 
 Bonus 1:
