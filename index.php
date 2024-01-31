@@ -64,7 +64,7 @@
                                      </p>
                                     <p class="card-text"><?php echo "Punteggio: ".$film->score."%" ?></p>
                                     <p class="card-text"><?php echo "Regista: ".$film->director ?></p>
-                                    <p class="card-text"><?php echo "Prudottore: ".$film->production ?></p>
+                                    <p class="card-text"><?php echo "Produttore: ".$film->production ?></p>
                                 </div>
                                 <div class="card-footer text-body-secondary">
                                     <?php echo "Anno: ".$film->year ?>
